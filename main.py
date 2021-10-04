@@ -1,8 +1,8 @@
 """Generate random password of given length"""
 
-import random
-
-passlen = int(input("enter the length of password"))
-s="abcdefghijklmnopqrstuvwxyz01234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()?"
-p =  "".join(random.sample(s, passlen))
-print(p)
+def random_password(length):
+    import random
+    
+    s="abcdefghijklmnopqrstuvwxyz01234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()?"
+    p =  "".join(random.sample(s, length))
+    print(p)
